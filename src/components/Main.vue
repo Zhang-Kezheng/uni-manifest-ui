@@ -4,8 +4,12 @@
           <el-tab-pane label="基础配置">
               <base-config/>
           </el-tab-pane>
-          <el-tab-pane label="App图标配置">Config</el-tab-pane>
-          <el-tab-pane label="App启动界面配置">Role</el-tab-pane>
+          <el-tab-pane label="App图标配置">
+              <app-icon-config/>
+          </el-tab-pane>
+          <el-tab-pane label="App启动界面配置">
+            <splash-screen-config/>
+          </el-tab-pane>
           <el-tab-pane label="App模块配置">Task</el-tab-pane>
       </el-tabs>
   </div>
@@ -13,10 +17,12 @@
 
 <script>
 import BaseConfig from "@/components/BaseConfig.vue";
+import AppIconConfig from "@/components/AppIconConfig.vue";
+import SplashScreenConfig from "@/components/SplashScreenConfig.vue";
 
 export default {
   name: 'HelloWorld',
-    components: {BaseConfig}
+    components: {SplashScreenConfig, AppIconConfig, BaseConfig}
 }
 </script>
 
